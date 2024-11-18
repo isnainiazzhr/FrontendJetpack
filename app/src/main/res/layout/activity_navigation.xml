@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvlazyRow"
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:layout_marginTop="10sp"
+            tools:listitem="@layout/item_list_lazy_row"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvlazyColum"
+            android:layout_width="match_parent"
+            android:layout_height="550sp"
+            android:layout_marginTop="10sp"
+            tools:listitem="@layout/item_list_lazy_column" />
+
+        <RelativeLayout
+
+           android:layout_width="match_parent"
+           android:layout_height="40sp"
+           android:background="@drawable/retangle"
+
+           >
+
+           <ImageView
+               android:id="@+id/n1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:srcCompat="@drawable/img"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="130sp"/>
+           <ImageView
+               android:id="@+id/nav2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:srcCompat="@drawable/iconreceipt"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/n1"
+               android:layout_marginLeft="40dp"/>
+
+           <ImageView
+               android:id="@+id/imgProfil1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:srcCompat="@drawable/iconprofil"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/nav2"
+               android:layout_marginLeft="40dp"/>
+
+
+
+
+
+       </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

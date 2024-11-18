@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardKampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="20sp"
+        app:cardBackgroundColor="#7f8fa6">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imgKampus"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/universitasindonesia" />
+            <TextView
+                android:id="@+id/txtNamaKampus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Kampus"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/imgKampus"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:id="@+id/txtAlamatKampus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Kampus"
+                android:layout_toRightOf="@id/imgKampus"
+                android:layout_below="@id/txtNamaKampus"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
